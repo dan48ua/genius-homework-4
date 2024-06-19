@@ -1,0 +1,50 @@
+/*Fonts*/
+@import "./utils/fonts";
+
+/* variables for all colors containers*/
+@import "./utils/variables";
+
+@import "./utils/texts";
+
+/* Base styles */
+@import "./base";
+
+/*Header styles*/
+@import "./layouts/header";
+
+/*Logo link*/
+@import "./components/logo";
+
+/*buttons*/
+@import "./components/buttons";
+
+/*Hero section*/
+@import "./layouts/hero-section";
+
+/* transformation section*/
+@import "./layouts/transformation-section";
+
+/*Advantages section*/
+@import "./layouts/advantages-section";
+
+/* Procedure section*/
+@import "./layouts/procedure-section";
+
+/* Contact section styles*/
+@import "./layouts/contacts-section";
+
+/*Contact Form styles*/
+@import "./layouts/contact-form";
+
+@import "./components/privacy-policy";
+
+/*sections titles*/
+@import "./components/sections-title";
+
+/*Footer styles*/
+@import "./layouts/footer";
+
+/*Modal*/
+@import "./layouts/modal";
+
+@import "./layouts/mobile-menu";

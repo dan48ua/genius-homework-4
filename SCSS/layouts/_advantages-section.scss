@@ -1,0 +1,58 @@
+.advantages-section {
+  padding-bottom: 96px;
+  background-image: linear-gradient(
+      38deg,
+      rgba(43, 127, 255, 0.2) 39.74%,
+      rgba(43, 127, 255, 0) 54.16%,
+      rgba(43, 127, 255, 0) 66.66%
+    ),
+    url(../../images/background-advantages.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 104px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 176px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    line-height: normal;
+    font-family: "Play", sans-serif;
+  }
+  &__flexlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      gap: 56px;
+    }
+  }
+  &__border-card {
+    border: 1px solid white;
+    border-radius: 16px;
+    width: 316px;
+    height: 181px;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 32px;
+    background-color: var(--color-primary-light);
+  }
+  &__icons {
+    margin-bottom: 16px;
+  }
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}

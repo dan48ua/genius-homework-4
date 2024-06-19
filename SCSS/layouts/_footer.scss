@@ -1,0 +1,67 @@
+.footer-section {
+  background-color: var(--color-brand-dark);
+  padding-top: 56px;
+  padding-bottom: 56px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    gap: 186px;
+    align-items: flex-start;
+  }
+  &__nav {
+    display: flex;
+    gap: 186px;
+
+    .footer-section__link {
+      font-size: 16px;
+      color: var(--color-primary-light);
+      margin-bottom: 16px;
+    }
+    .footer-section__link:hover,
+    .footer-section__link:focus {
+      color: var(--color-brand-light);
+    }
+  }
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+.footer-section::after {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 278px;
+  height: 213px;
+  background-repeat: no-repeat;
+  background-image: url("../images/decor-care-products.png");
+  content: "";
+}
+
+.address-link {
+  font-size: 16px;
+  color: var(--color-primary-light);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-brand-light);
+}
+
+.address-copyright {
+  font-size: 13px;
+  color: var(--color-borderform-copyright);
+}
+.footer-icon-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 16px;
+}
+.footer-icons:hover {
+  fill: var(--color-brand-light);
+}
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+}

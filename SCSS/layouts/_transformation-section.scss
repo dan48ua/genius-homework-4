@@ -1,0 +1,121 @@
+.transformation-section {
+  padding-top: 40px;
+  padding-left: 100px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+
+  &__container {
+    display: flex;
+  }
+  &__title {
+    font-size: 32px;
+    font-family: "Roboto";
+    line-height: normal;
+    margin-bottom: 24px;
+    width: 264px;
+    font-weight: 500;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: "Play";
+      line-height: normal;
+      margin-bottom: 40px;
+      width: 529px;
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    width: 320px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 709px;
+    }
+  }
+  &__img1-container {
+    position: relative;
+  }
+  &__img-before {
+    display: none;
+    border-radius: 100%;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      border-radius: 100%;
+      padding-bottom: 40px;
+    }
+  }
+  &__img2-container {
+    padding-left: 196px;
+  }
+  &__img-after {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      border-radius: 100%;
+      display: flex;
+      display: block;
+    }
+  }
+  &__stars-1 {
+    position: absolute;
+    bottom: -40px;
+    left: 121px;
+  }
+  &__stars-1.star-animation {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &__stars-2 {
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 33px;
+      right: 0;
+    }
+  }
+  &__stars-2.star-animation {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &__star-3 {
+    display: none;
+    position: absolute;
+    top: 270px;
+    right: 36px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      top: 270px;
+      right: 36px;
+    }
+  }
+  &__star-3.star-animation {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

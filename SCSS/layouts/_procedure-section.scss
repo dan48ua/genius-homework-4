@@ -1,0 +1,68 @@
+.procedure-section {
+  padding-bottom: 96px;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__cards-container {
+    overflow: hidden;
+  }
+  &__cards-slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: var(--color-brand-dark);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  &__button:hover {
+    background-color: var(--color-brand-light);
+    fill: var(--color-primary-light);
+    border-color: var(--color-brand-light);
+  }
+  &__img {
+    position: relative;
+    border-radius: 4px 120px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      #011c44 101.39%
+    );
+    width: 344px;
+    height: 456px;
+  }
+  &__face-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px 120px;
+  }
+  &__text {
+    font-size: 22px;
+    padding-top: 372px;
+    padding-bottom: 32px;
+    padding-left: 115px;
+    padding-right: 77px;
+    height: 52px;
+    line-height: 1.1;
+    color: var(--color-primary-light);
+    text-align: center;
+  }
+  .procedure-section__button.next {
+    transform: rotate(0.5turn);
+  }
+}
